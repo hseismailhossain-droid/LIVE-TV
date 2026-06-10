@@ -1,0 +1,6 @@
+{
+  "name": "বিশ্ব লাইভ টিভি (World Live TV)",
+  "description": "বিশ্বের সকল লাইভ টিভি চ্যানেল, বিনোদন, খবর এবং খেলাধুলা দেখার সেরা প্ল্যাটফর্ম। Watch live TV channels from around the world.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #06060f;
+  --bg2: #0e0e1c;
+  --bg3: #16162a;
+  --card: #111122;
+  --cyan: #00e5ff;
+  --pink: #ff2d78;
+  --gold: #ffd700;
+  --purple: #9b59b6;
+  --text: #fff;
+  --text2: #99aacc;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan);
+}
+
+/* Custom styles for matching user design */
+.brand-gradient {
+  background: linear-gradient(90deg, #ff6b35, #f7931e, #00d4ff, #9b59b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ch-card-gradient::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cyan), var(--pink));
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
